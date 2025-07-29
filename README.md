@@ -7,3 +7,9 @@ This repository contains the official implementation of MSUANet (Multi-Stage Inf
 
 
 **We will release the complete version of the code as soon as possible. Stay tuned.**
+
+<p align="center">
+  <img width="100%" alt="MSUANet Architecture" src="https://github.com/user-attachments/assets/71cf1a34-75c4-46d1-9d20-570e76201e52" />
+</p>
+
+> 🚧 **The complete version of the code will be released soon. Stay tuned!**
