@@ -8,15 +8,11 @@ This repository provides the official implementation of **MSUANet**, a novel mul
 
 ## 📋 Table of Contents
 
-- [Overview](#overview)
+- [Abstract](#Abstract)
 - [Environment Setup](#environment-setup)
-- [Project Structure](#project-structure)
 - [Dataset Preparation](#dataset-preparation)
 - [Quick Start](#quick-start)
 - [Training](#training)
-- [Testing](#testing)
-- [Results and Visualization](#results-and-visualization)
-- [Parameters](#parameters)
 - [Citation](#citation)
 
 ## 🎯 Abstract
@@ -24,7 +20,6 @@ Multitask learning (MTL) can effectively exploit the complementary information a
 
 ## 🛠️ Environment Setup
 ### Requirements
-
 ```bash
 # Create conda environment
 conda create -n MSUANet python=3.8
@@ -46,40 +41,6 @@ pip install scipy scikit-learn matplotlib spectral tensorboard tqdm
 - tensorboard
 - numpy
 
-## 📁 Project Structure
-
-```
-HSIMTL/
-├── main.py                # Main 
-├── model.py               # MSUANet model architecture
-├── main.sh                # Shell script for  experiments
-├── compare_main.py        # Comparison methods training
-├── compare_main.sh        # Shell script for comparisons
-├── dataset/               # Dataset directory
-│   ├── DC/               # DC dataset
-│   ├── IP/               # Indian Pines dataset
-│   ├── HU/               # Houston University dataset
-│   ├── BE/               # Berlin dataset
-│   └── LK/               # Longkou datasets
-├── models/                # Model components
-│   └── backbone/          # Swin Transformer backbone
-├── utils/                 # Utility functions
-│   ├── data_load.py      # Classification data loading
-│   ├── Udata_load.py     # Unmixing data loading
-│   ├── utils.py          # Helper functions (loss, metrics)
-│   └── datacolor.py      # Visualization colors
-├── comparemethod/         # Comparison methods
-│   ├── UNet.py
-│   ├── SwimUnet.py
-│   ├── TransUNet.py
-│   └── ...
-├── output/                # Output directory (auto-created)
-│   └── {DATASET}/
-│       ├── vis/          # Visualization results
-│       ├── txt/          # Training logs
-│       └── best_models/  # Saved model checkpoints
-└── logs/                  # Additional logs
-```
 
 ## 📊 Dataset Preparation
 ### Supported Datasets
