@@ -35,16 +35,15 @@ pip install scipy scikit-learn matplotlib spectral tensorboard tqdm
 - spectral
 - tensorboard
 
-
 ### Dataset 
-```
+
 | Dataset | Classes | Bands | Resolution |
 |---------|---------|-------|------------|
 | DC (Washington DC Mall) | 7 | 191 | 1280×307 |
 | IP (Indian Pines) | 16 | 200 | 145×145 |
 | HU (Houston) | 15 | 144 | 349×1905 |
 | BE (Berlin) | 8 | 244 | 1723×476 |
-```
+
 ### Dataset Directory 
 ```
 dataset/
@@ -60,10 +59,14 @@ dataset/
 └── ...
 ```
 
+## 🚀 Training
+
 Our codebase has integrated several widely used comparison methods, including **UNet, FreeNet, SSFCN, FContNet, UperNet, SegFormer, and TransUNet**.  
+
+
 If needed, you may conveniently supplement or reproduce the comparison experiments by running the following commands, which helps reduce the additional effort required for implementation and configuration.
 
-## 🚀 Training
+
 ### Train MSUANet
 ```bash
 # Train on Houston dataset with 20 samples per class
@@ -87,12 +90,6 @@ If you find this code useful for your research, please consider citing:
   note={doi: {10.1109/TGRS.2025.3649827}}
 }
 ```
-
-## 📧 Contact
-For questions and issues, please open a GitHub issue or contact [yhxie2022@163.com].
-## 📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ## 🙏 Acknowledgments
 
 Acknowledgment—The authors would like to thank the authors of the open-source implementations that contributed to this work. Parts of our code were adapted from the following repositories: 
@@ -101,3 +98,11 @@ Acknowledgment—The authors would like to thank the authors of the open-source 
 - [FreeNet](https://github.com/Z-Zheng/FreeNet)
 
 We sincerely appreciate their valuable efforts in making their code publicly available.
+
+## 📧 Contact
+For questions and issues, please open a GitHub issue or contact [yhxie2022@163.com].
+
+## ❤️ Final Words
+Thank you for your interest in our work.  
+We hope this repository will be helpful to your research, and we wish you every success in your scientific journey.
+
