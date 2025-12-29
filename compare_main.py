@@ -38,11 +38,11 @@ def set_seed(seed):
 def main():
 
     parser = argparse.ArgumentParser(description="Hyperspectral Classification")
-    parser.add_argument('--dataset', type=str, default='BE', choices=['samson','DC','IP','HU','PU','BE','LK'],
-                            help="choose dataset: samson, DC, IP, HU ,PU")
+    parser.add_argument('--dataset', type=str, default='BE', choices=['DC','IP','HU','BE'],
+                            help="choose dataset:  DC, IP, HU ,BE")
     parser.add_argument('--net', type=str, default='TransUNet', choices=['UNet','FreeNet','SSFCN','FContNet',
-                                                                       'UperNet','Segformer','TransUNet','MTLNet'],
-                            help="choose network model: UNet, FreeNet, SSFCN, FContNet, UperNet, Segformer, TransUNet, MTLNet")
+                                                                       'UperNet','Segformer','TransUNet'],
+                            help="choose network model: UNet, FreeNet, SSFCN, FContNet, UperNet, Segformer, TransUNet")
     parser.add_argument('--train_num', type=int, default=1,help="training samples per class")
     parser.add_argument('--seed', type=int, default=2333, help="random seed")
     parser.add_argument('--gpu', type=int, default=0, help="GPU device ID to use")

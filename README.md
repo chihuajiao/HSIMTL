@@ -1,28 +1,7 @@
-<!-- # MSUANet: Multi-Stage Information Sharing Multitask Hyperspectral Classification Network with Unmixing Assistance
-
-This repository provides the official implementation of **MSUANet**, a novel multitask learning framework designed for hyperspectral image (HSI) analysis. MSUANet simultaneously performs **HSI classification** and **spectral unmixing**, integrating a multi-stage cross-task information sharing mechanism. By leveraging the physical interpretability from the unmixing task, the model enhances discriminative feature learning, thereby significantly improving classification performance. -->
-
 <h1 align="center">MSUANet</h1>
 
 <p align="center">
   <b>Multi-Stage Information Sharing Multitask Hyperspectral Classification Network with Unmixing Assistance</b>
-</p>
-
-<!-- <p align="center">
-  by
-  <a href="https://scholar.google.com/citations?user=YOUR_ID">Mingyang Zhang</a>,
-  <a href="https://scholar.google.com/citations?user=YOUR_ID">Yuhang Xie</a>,
-  <a href="https://scholar.google.com/citations?user=YOUR_ID">Hao Liu</a>,
-  <a href="https://scholar.google.com/citations?user=YOUR_ID">Shuang Wu</a>,
-  <a href="https://scholar.google.com/citations?user=YOUR_ID">Bufang Yang</a>,
-  <a href="https://scholar.google.com/citations?user=YOUR_ID">Fenlong Jiang</a>,
-  <a href="https://scholar.google.com/citations?user=YOUR_ID">Yu Zhou</a>,
-  and
-  <a href="https://scholar.google.com/citations?user=YOUR_ID">Maoguo Gong</a>
-</p> -->
-
-<p align="center">
-  This repository provides the official implementation of <b>MSUANet</b>, a multitask learning framework for hyperspectral image (HSI) analysis.
 </p>
 
 <p align="center">
@@ -30,10 +9,9 @@ This repository provides the official implementation of **MSUANet**, a novel mul
        src="https://github.com/user-attachments/assets/71cf1a34-75c4-46d1-9d20-570e76201e52" />
 </p>
 
-<!-- <p align="center">
-  <b>Figure 1.</b> Overall architecture of MSUANet for HSI classification and spectral unmixing.
-</p> -->
-
+<p align="left">
+  This repository provides the official implementation of <b>MSUANet</b>, a multitask learning framework for hyperspectral image (HSI) analysis.
+</p>
 
 
 
@@ -56,17 +34,18 @@ pip install scipy scikit-learn matplotlib spectral tensorboard tqdm
 - matplotlib
 - spectral
 - tensorboard
-- numpy
 
 
-## 📊 Dataset Preparation
+### Dataset 
+```
 | Dataset | Classes | Bands | Resolution |
 |---------|---------|-------|------------|
 | DC (Washington DC Mall) | 7 | 191 | 1280×307 |
 | IP (Indian Pines) | 16 | 200 | 145×145 |
 | HU (Houston) | 15 | 144 | 349×1905 |
 | BE (Berlin) | 8 | 244 | 1723×476 |
-### Directory Structure
+```
+### Dataset Directory 
 ```
 dataset/
 ├── DC/
@@ -81,17 +60,18 @@ dataset/
 └── ...
 ```
 
-## 🚀 Quick Start
-### Basic Usage
+Our codebase has integrated several widely used comparison methods, including **UNet, FreeNet, SSFCN, FContNet, UperNet, SegFormer, and TransUNet**.  
+If needed, you may conveniently supplement or reproduce the comparison experiments by running the following commands, which helps reduce the additional effort required for implementation and configuration.
+
+## 🚀 Training
+### Train MSUANet
 ```bash
 # Train on Houston dataset with 20 samples per class
 python main.py --dataset HU --train_num 20 --epoch 300 --seed 2333
 ```
-### Using Shell Script (Batch Experiments)
-
+### Train Compare Methods
 ```bash
-# Run experiments on multiple datasets
-bash main.sh
+python compare_main.py --dataset HU --net TransUNet --train_num 20 --epoch 300 --seed 2333
 ```
 
 ## 📝 Citation
