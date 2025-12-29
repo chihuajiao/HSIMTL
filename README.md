@@ -6,17 +6,6 @@ This repository provides the official implementation of **MSUANet**, a novel mul
   <img width="100%" alt="MSUANet Architecture" src="https://github.com/user-attachments/assets/71cf1a34-75c4-46d1-9d20-570e76201e52" />
 </p>
 
-## 📋 Table of Contents
-
-- [Abstract](#Abstract)
-- [Environment Setup](#environment-setup)
-- [Dataset Preparation](#dataset-preparation)
-- [Quick Start](#quick-start)
-- [Training](#training)
-- [Citation](#citation)
-
-## 🎯 Abstract
-Multitask learning (MTL) can effectively exploit the complementary information across different tasks in hyperspectral images (HSIs) to support classification. However, existing MTL methods for HSI classification usually employ shared structures in the early stages or simple information fusion in the later stages, failing to adequately characterize task specific feature differences and adaptively select task-relevant information. Therefore, we propose a multi-stage information sharing multitask hyperspectral classification network with unmixing assistance (MSUANet). The proposed method adopts a three stage strategy, including low-level information sharing, task-specific information mining, and adaptive latent information selection, to fully exploit the information gain introduced by the unmixing task and provide more fine-grained spectral details for improved classification performance. In addition, we propose an information diverter with hybrid attention (IDHA) module, which enhances task-specific information for classification and unmixing, respectively. Furthermore, we design the adaptive latent abundance knowledge transfer (ALAKT) module, which adaptively selects latent complementary information for both tasks. Experimental results on Indian Pines, Houston 2013, Berlin, and Washington DC Mall datasets demonstrate that MSUANet outperforms state-of-the-art methods.
 
 ## 🛠️ Environment Setup
 ### Requirements
@@ -25,12 +14,9 @@ Multitask learning (MTL) can effectively exploit the complementary information a
 conda create -n MSUANet python=3.8
 conda activate MSUANet
 
-# Install PyTorch (adjust CUDA version as needed)
 conda install pytorch torchvision cudatoolkit=11.3 -c pytorch
-# Install dependencies
 pip install scipy scikit-learn matplotlib spectral tensorboard tqdm
 ```
-
 ### Core Dependencies
 - Python >= 3.7
 - PyTorch >= 1.12
@@ -43,14 +29,12 @@ pip install scipy scikit-learn matplotlib spectral tensorboard tqdm
 
 
 ## 📊 Dataset Preparation
-### Supported Datasets
 | Dataset | Classes | Bands | Resolution |
 |---------|---------|-------|------------|
-| DC (Disease Crop) | 7 | 191 | 1280×307 |
+| DC (Washington DC Mall) | 7 | 191 | 1280×307 |
 | IP (Indian Pines) | 16 | 200 | 145×145 |
 | HU (Houston) | 15 | 144 | 349×1905 |
 | BE (Berlin) | 8 | 244 | 1723×476 |
-
 ### Directory Structure
 ```
 dataset/
@@ -67,14 +51,11 @@ dataset/
 ```
 
 ## 🚀 Quick Start
-
 ### Basic Usage
-
 ```bash
 # Train on Houston dataset with 20 samples per class
 python main.py --dataset HU --train_num 20 --epoch 300 --seed 2333
 ```
-
 ### Using Shell Script (Batch Experiments)
 
 ```bash
@@ -89,18 +70,19 @@ If you find this code useful for your research, please consider citing:
 ```bibtex
 @article{msuanet2024,
   title={MSUANet: Multi-Stage Information Sharing Multitask Hyperspectral Classification Network with Unmixing Assistance},
-  author={Your Name},
-  journal={Journal Name},
-  year={2024}
+  author={Zhang, Mingyang and Xie, Yuhang and Liu, Hao and Wu, Shuang and Yang, Bufang and Jiang, Fenlong and Zhou, Yu and Gong, Maoguo},
+  journal={IEEE Transactions on Geoscience and Remote Sensing},
+  year={2025},
+  publisher={IEEE},
+  note={doi: {10.1109/TGRS.2025.3649827}}
 }
 ```
 
 ## 📧 Contact
-
 For questions and issues, please open a GitHub issue or contact [yhxie2022@163.com].
-
 ## 📄 License
-
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 🙏 Acknowledgments
+
+Acknowledgment—The authors would like to thank the authors of the open-source implementations that contributed to this work. Parts of our code were adapted from the following repositories: CyCU-Net (https://github.com/hanzhu97702/IEEE_TGRS_CyCU-Net), DSNet (https://github.com/hanzhu97702/DSNet), and FreeNet (https://github.com/Z-Zheng/FreeNet). We sincerely appreciate their valuable efforts in making their code publicly available.
