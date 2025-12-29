@@ -1,6 +1,6 @@
-# MSUANet: Multi-Stage Information Sharing Multitask Hyperspectral Classification Network with Unmixing Assistance
+<!-- # MSUANet: Multi-Stage Information Sharing Multitask Hyperspectral Classification Network with Unmixing Assistance
 
-This repository provides the official implementation of **MSUANet**, a novel multitask learning framework designed for hyperspectral image (HSI) analysis. MSUANet simultaneously performs **HSI classification** and **spectral unmixing**, integrating a multi-stage cross-task information sharing mechanism. By leveraging the physical interpretability from the unmixing task, the model enhances discriminative feature learning, thereby significantly improving classification performance.
+This repository provides the official implementation of **MSUANet**, a novel multitask learning framework designed for hyperspectral image (HSI) analysis. MSUANet simultaneously performs **HSI classification** and **spectral unmixing**, integrating a multi-stage cross-task information sharing mechanism. By leveraging the physical interpretability from the unmixing task, the model enhances discriminative feature learning, thereby significantly improving classification performance. -->
 
 <h1 align="center">MSUANet</h1>
 
@@ -8,7 +8,7 @@ This repository provides the official implementation of **MSUANet**, a novel mul
   <b>Multi-Stage Information Sharing Multitask Hyperspectral Classification Network with Unmixing Assistance</b>
 </p>
 
-<p align="center">
+<!-- <p align="center">
   by
   <a href="https://scholar.google.com/citations?user=YOUR_ID">Mingyang Zhang</a>,
   <a href="https://scholar.google.com/citations?user=YOUR_ID">Yuhang Xie</a>,
@@ -19,20 +19,20 @@ This repository provides the official implementation of **MSUANet**, a novel mul
   <a href="https://scholar.google.com/citations?user=YOUR_ID">Yu Zhou</a>,
   and
   <a href="https://scholar.google.com/citations?user=YOUR_ID">Maoguo Gong</a>
-</p>
+</p> -->
 
 <p align="center">
   This repository provides the official implementation of <b>MSUANet</b>, a multitask learning framework for hyperspectral image (HSI) analysis.
 </p>
 
 <p align="center">
-  <img width="100%" alt="MSUANet Architecture"
+  <img width="80%" alt="MSUANet Architecture"
        src="https://github.com/user-attachments/assets/71cf1a34-75c4-46d1-9d20-570e76201e52" />
 </p>
 
-<p align="center">
+<!-- <p align="center">
   <b>Figure 1.</b> Overall architecture of MSUANet for HSI classification and spectral unmixing.
-</p>
+</p> -->
 
 
 
@@ -119,4 +119,5 @@ Acknowledgment—The authors would like to thank the authors of the open-source 
 - [CyCU-Net](https://github.com/hanzhu97702/IEEE_TGRS_CyCU-Net)
 - [DSNet](https://github.com/hanzhu97702/DSNet)
 - [FreeNet](https://github.com/Z-Zheng/FreeNet)
+
 We sincerely appreciate their valuable efforts in making their code publicly available.
