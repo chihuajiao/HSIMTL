@@ -2,13 +2,40 @@
 
 This repository provides the official implementation of **MSUANet**, a novel multitask learning framework designed for hyperspectral image (HSI) analysis. MSUANet simultaneously performs **HSI classification** and **spectral unmixing**, integrating a multi-stage cross-task information sharing mechanism. By leveraging the physical interpretability from the unmixing task, the model enhances discriminative feature learning, thereby significantly improving classification performance.
 
-<figure align="center">
+<h1 align="center">MSUANet</h1>
+
+<p align="center">
+  <b>Multi-Stage Information Sharing Multitask Hyperspectral Classification Network with Unmixing Assistance</b>
+</p>
+
+<p align="center">
+  by
+  <a href="https://scholar.google.com/citations?user=YOUR_ID">Mingyang Zhang</a>,
+  <a href="https://scholar.google.com/citations?user=YOUR_ID">Yuhang Xie</a>,
+  <a href="https://scholar.google.com/citations?user=YOUR_ID">Hao Liu</a>,
+  <a href="https://scholar.google.com/citations?user=YOUR_ID">Shuang Wu</a>,
+  <a href="https://scholar.google.com/citations?user=YOUR_ID">Bufang Yang</a>,
+  <a href="https://scholar.google.com/citations?user=YOUR_ID">Fenlong Jiang</a>,
+  <a href="https://scholar.google.com/citations?user=YOUR_ID">Yu Zhou</a>,
+  and
+  <a href="https://scholar.google.com/citations?user=YOUR_ID">Maoguo Gong</a>
+</p>
+
+<p align="center">
+  This repository provides the official implementation of <b>MSUANet</b>, a multitask learning framework for hyperspectral image (HSI) analysis.
+</p>
+
+<p align="center">
   <img width="100%" alt="MSUANet Architecture"
        src="https://github.com/user-attachments/assets/71cf1a34-75c4-46d1-9d20-570e76201e52" />
-  <figcaption>
-    <b>Figure 1.</b> Overall architecture of MSUANet for HSI classification and spectral unmixing.
-  </figcaption>
-</figure>
+</p>
+
+<p align="center">
+  <b>Figure 1.</b> Overall architecture of MSUANet for HSI classification and spectral unmixing.
+</p>
+
+
+
 
 
 ## 🛠️ Environment Setup
@@ -68,7 +95,6 @@ bash main.sh
 ```
 
 ## 📝 Citation
-
 If you find this code useful for your research, please consider citing:
 
 ```bibtex
