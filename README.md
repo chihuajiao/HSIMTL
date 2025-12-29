@@ -89,4 +89,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 🙏 Acknowledgments
 
-Acknowledgment—The authors would like to thank the authors of the open-source implementations that contributed to this work. Parts of our code were adapted from the following repositories: CyCU-Net (https://github.com/hanzhu97702/IEEE_TGRS_CyCU-Net), DSNet (https://github.com/hanzhu97702/DSNet), and FreeNet (https://github.com/Z-Zheng/FreeNet). We sincerely appreciate their valuable efforts in making their code publicly available.
+Acknowledgment—The authors would like to thank the authors of the open-source implementations that contributed to this work. Parts of our code were adapted from the following repositories: 
+- [CyCU-Net](https://github.com/hanzhu97702/IEEE_TGRS_CyCU-Net)
+- [DSNet](https://github.com/hanzhu97702/DSNet)
+- [FreeNet](https://github.com/Z-Zheng/FreeNet)
+We sincerely appreciate their valuable efforts in making their code publicly available.
