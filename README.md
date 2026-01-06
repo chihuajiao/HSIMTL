@@ -36,6 +36,7 @@ pip install scipy scikit-learn matplotlib spectral tensorboard tqdm
 ### Dataset 
 We conduct experiments on four widely used hyperspectral datasets: Washington DC Mall (DC), Indian Pines (IP), Houston (HU), and Berlin (BE).
 The dataset has been uploaded and you can download it here  BaiDu Cloud drive:(https://pan.baidu.com/s/1yNS0DektpZ-3K7XvQ9wfhQ code: 1234).
+
 Regarding the creation of the data de-mixing part, you can refer to the introduction in the paper or the [Q1 question](#q1) in the Q&A section.
 
 
@@ -111,4 +112,5 @@ We hope this repository will be helpful to your research, and we wish you every 
 ### Q1: How to make rough and unmixed labels
 <a id="q1"></a>
 A1: The rough unmixing labels allow you to select the area of interest, and then use methods such as FCLSU to obtain the results based on the endmember curves and the actual hyperspectral image. You can refer to the process shown in the following picture.
+[fig5_HU_plot.pdf](https://github.com/user-attachments/files/24453275/fig5_HU_plot.pdf)
 
