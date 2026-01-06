@@ -112,5 +112,10 @@ We hope this repository will be helpful to your research, and we wish you every 
 ### Q1: How to make rough and unmixed labels
 <a id="q1"></a>
 A1: The rough unmixing labels allow you to select the area of interest, and then use methods such as FCLSU to obtain the results based on the endmember curves and the actual hyperspectral image. You can refer to the process shown in the following picture.
-[fig5_HU_plot.pdf](https://github.com/user-attachments/files/24453275/fig5_HU_plot.pdf)
+
+
+<p align="center">
+  <img width="80%" alt="The process of unmixing"
+       src="https://github.com/user-attachments/assets/0e3960f8-08d4-4f05-b8d5-93666f4e473f" />
+</p>
 
