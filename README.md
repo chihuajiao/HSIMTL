@@ -115,9 +115,8 @@ A1: The rough unmixing labels allow you to select the area of interest, and then
 
 
 <p align="center">
-  <img width="80%" alt="The process of unmixing"
+  <img width="50%" alt="The process of unmixing"
        src="https://github.com/user-attachments/assets/0e3960f8-08d4-4f05-b8d5-93666f4e473f" />
 </p>
-
-<img width="661" height="305" alt="111" src="https://github.com/user-attachments/assets/fe72ce4d-dcfd-4938-8287-c4b0899232c8" />
+/>
 
